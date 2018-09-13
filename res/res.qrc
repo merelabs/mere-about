@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>mere-logo.png</file>
+        <file>close-icon.png</file>
+    </qresource>
+</RCC>
