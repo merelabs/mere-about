@@ -17,10 +17,10 @@
    <double>0.000000000000000</double>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 46, 99)</string>
+   <string notr="true">background-color: rgb(0, 46, 99);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="aboutUs">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -53,7 +53,7 @@ font-weight: 00;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="mereInfo">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -72,7 +72,7 @@ font-weight: 00;</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="mereContacts">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -97,7 +97,7 @@ font-weight: 00;</string>
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="mereLogo">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -110,35 +110,13 @@ font-weight: 00;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="res/res.qrc">:/res/mere-logo.png</pixmap>
+     <pixmap resource="res.qrc">:/res/mere-logo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="close">
-    <property name="geometry">
-     <rect>
-      <x>667</x>
-      <y>9</y>
-      <width>24</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="res/res.qrc">:/res/close-icon.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="textInteractionFlags">
-     <set>Qt::LinksAccessibleByMouse</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="mereVersion">
     <property name="geometry">
      <rect>
       <x>191</x>
@@ -154,11 +132,159 @@ font-weight: 00;</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;0.0.1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>700</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid white;</string>
+    </property>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>665</x>
+       <y>5</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>46</green>
+           <blue>99</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/res/close-icon.png</normaloff>:/res/close-icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>aboutUs</zorder>
+   <zorder>mereInfo</zorder>
+   <zorder>mereContacts</zorder>
+   <zorder>mereLogo</zorder>
+   <zorder>mereVersion</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="res/res.qrc"/>
+  <include location="res.qrc"/>
  </resources>
  <connections/>
 </ui>

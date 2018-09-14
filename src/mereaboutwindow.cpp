@@ -3,6 +3,8 @@
 
 #include <QDesktopWidget>
 #include <QMouseEvent>
+#include <QPainter>
+#include <QPaintEvent>
 
 MereAboutWindow::~MereAboutWindow()
 {
@@ -21,7 +23,7 @@ MereAboutWindow::MereAboutWindow(QWidget *parent) :
     move(desktop->screen()->rect().center() - this->rect().center());
 }
 
-void MereAboutWindow::mousePressEvent(QMouseEvent *event)
+void MereAboutWindow::on_btnClose_clicked()
 {
     this->close();
 }

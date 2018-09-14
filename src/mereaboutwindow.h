@@ -16,8 +16,8 @@ public:
     ~MereAboutWindow();
     explicit MereAboutWindow(QWidget *parent = 0);
 
-protected:
-     void mousePressEvent(QMouseEvent *event) override;
+private slots:
+    void on_btnClose_clicked();
 
 private:
     Ui::MereAboutWindow *ui;
