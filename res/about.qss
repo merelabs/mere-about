@@ -1,0 +1,17 @@
+#MereAboutWin
+{
+    background-color: rgb(0, 46, 99);
+    border:1px solid white;
+}
+
+#MereAboutVersion
+{
+    color: rgb(255, 255, 255);
+}
+
+#MereAboutUs
+{
+    color: rgb(255, 255, 255);
+    font: 24pt "Sans Serif";
+    font-weight: 00;
+}

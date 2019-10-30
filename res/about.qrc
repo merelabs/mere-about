@@ -1,6 +1,7 @@
 <RCC>
-    <qresource prefix="/res">
+    <qresource prefix="/about">
         <file>mere-logo.png</file>
         <file>close-icon.png</file>
+        <file>about.qss</file>
     </qresource>
 </RCC>

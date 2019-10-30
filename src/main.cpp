@@ -1,11 +1,9 @@
-#include "mereaboutwindow.h"
-#include <QApplication>
+#include "mereaboutapp.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MereAboutWindow w;
-    w.show();
-
-    return a.exec();
+    MereAboutApp app(argc, argv);
+    app.init();
+    app.start();
+    return app.exec();
 }

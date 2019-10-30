@@ -1,14 +1,14 @@
 [Desktop Entry]
 Name=About MERE 
 Name[bn]=MERE সম্পর্কে
-Comment=Learn more about MERE
+Comment=About me, mere!
 Comment[bn]=আমার সম্পর্কে আরও জানুন 
 Exec=mere-about
 Icon=mere
 Terminal=false
 Type=Application
 Categories=GTK;Core;Utility;
-OnlyShowIn=MERE;
+OnlyShowIn=mere;
 StartupNotify=false
 NoDisplay=true
 
