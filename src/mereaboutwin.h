@@ -27,8 +27,8 @@ private slots:
     void close();
 
 private:
-    QLabel *m_aboutUs;
-    QLabel *m_note;
+    QLabel *m_contact;
+    QLabel *m_summary;
     QLabel *m_version;
 };
 

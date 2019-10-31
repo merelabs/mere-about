@@ -1,6 +1,8 @@
 #ifndef MEREABOUTAPP_H
 #define MEREABOUTAPP_H
 
+#include <QDebug>
+#include <QTranslator>
 #include <QApplication>
 
 class MereAboutWin;
@@ -16,6 +18,7 @@ public:
 
 private:
     MereAboutWin *m_win;
+    QTranslator m_translator;
 };
 
 #endif // MEREABOUTAPP_H

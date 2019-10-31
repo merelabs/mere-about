@@ -9,9 +9,9 @@
     color: rgb(255, 255, 255);
 }
 
-#MereAboutUs
+#MereContactUs
 {
     color: rgb(255, 255, 255);
-    font: 24pt "Sans Serif";
+    font: 20pt "Sans Serif";
     font-weight: 00;
 }

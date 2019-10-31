@@ -1,0 +1,6 @@
+.qmake.stash
+*.json
+*.o
+Makefile
+mere-about
+mere-about.pro.*
