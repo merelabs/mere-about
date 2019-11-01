@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=About MERE 
-Name[bn]=MERE সম্পর্কে
+Name=About mere
+Name[bn]=mere সম্পর্কে
 Comment=About me, mere!
 Comment[bn]=আমার সম্পর্কে আরও জানুন 
 Exec=mere-about
