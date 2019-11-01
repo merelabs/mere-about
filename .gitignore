@@ -2,6 +2,7 @@
 *.json
 *.o
 moc_*
+qrc_*
 i18n/*.qm
 Makefile
 mere-about
