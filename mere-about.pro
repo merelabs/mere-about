@@ -52,16 +52,13 @@ system($$command)|error("Failed to run: $$command")
 # Install
 #
 unix{
-    target.path = /usr/local/bin
-    target.commands = @echo "Going to install target"
+    target.path = /usr/local/bin/
 
-    i18n.path = /usr/local/share/mere/about/i18n
+    i18n.path = /usr/local/share/mere/about/i18n/
     i18n.files = i18n/*.qm
-    i18n.commands = @echo "Going to copy i18n resources"
 
     desktop.path  = /usr/local/share/applications/
     desktop.files = mere-about.desktop
-    desktop.commands = @echo "Going to copy desktop entity"
 
     INSTALLS += target i18n desktop
 }
