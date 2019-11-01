@@ -54,7 +54,7 @@ system($$command)|error("Failed to run: $$command")
 unix{
     target.path = /usr/local/bin/
 
-    i18n.path = /usr/local/share/mere/about/i18n/
+    i18n.path = /usr/local/share/mere/mere-about/i18n/
     i18n.files = i18n/*.qm
 
     desktop.path  = /usr/local/share/applications/
