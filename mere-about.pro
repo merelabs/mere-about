@@ -10,6 +10,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 DEFINES += APP_NAME=\\\"$$TARGET\\\"
 DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
+CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG_OUTPUT
+
 SOURCES += \
         src/main.cpp \
         src/mereaboutapp.cpp \
