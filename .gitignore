@@ -1,6 +1,7 @@
 .qmake.stash
 *.json
 *.o
+moc_*
 i18n/*.qm
 Makefile
 mere-about
