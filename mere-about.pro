@@ -3,6 +3,7 @@ QT      += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET  = mere-about
+VERSION = 0.0.1b
 TEMPLATE= app
 
 DEFINES += QT_DEPRECATED_WARNINGS
@@ -18,15 +19,6 @@ HEADERS += \
 
 RESOURCES += \
     res/about.qrc
-
-#TRANSLATIONS += \
-#    i18n/mere-about_bn.ts \
-#    i18n/mere-about_en.ts
-
-#DISTFILES += \
-#    i18n/mere-about_bn.ts \
-#    i18n/mere-about_en.ts
-#    README.md
 
 #
 # Generate TS file(s)
