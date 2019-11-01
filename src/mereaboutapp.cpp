@@ -34,7 +34,7 @@ MereAboutApp::MereAboutApp(int &argc, char **argv)
     // I18nUtils::apply();
     // I18nUtils::apply(locale, default);
     {
-        QString pattern = "/usr/local/share/mere/about/i18n/mere-about_%1.qm";
+        QString pattern = "/usr/local/share/mere/mere-about/i18n/mere-about_%1.qm";
 
         QLocale locale = QLocale::system();
         QString path = pattern.arg(locale.name());
