@@ -29,7 +29,7 @@ RESOURCES += \
 #    README.md
 
 #
-# Generate TS file
+# Generate TS file(s)
 #
 LANGUAGES = en bn
 defineReplace(prependAll) {
@@ -42,30 +42,28 @@ command = $$LUPDATE mere-about.pro
 system($$command)|error("Failed to run: $$command")
 
 #
-# Generate QM file from TS file, and
-# Copy to the resource bundle
+# Generate QM file(s) from TS file(s)
 #
-TRANSLATIONS_FILES =
 qtPrepareTool(LRELEASE, lrelease)
-for(tsfile, TRANSLATIONS) {
-    qmfile = $$tsfile
-    qmfile ~= s,.ts,.qm
-
-    command = $$LRELEASE -removeidentical $$tsfile -qm $$qmfile
-    system($$command)|error("Failed to run: $$command")
-    TRANSLATIONS_FILES += $$qmfile
-}
+command = $$LRELEASE -removeidentical i18n/*.ts
+system($$command)|error("Failed to run: $$command")
 
 #
 # Install
 #
 unix{
-    i18n.path = /usr/local/share/mere/about/i18n
-    i18n.files = $$TRANSLATIONS_FILES
-    INSTALLS += i18n
-
     target.path = /usr/local/bin
-    INSTALLS += target
+    target.commands = @echo "Going to install target"
+
+    i18n.path = /usr/local/share/mere/about/i18n
+    i18n.files = i18n/*.qm
+    i18n.commands = @echo "Going to copy i18n resources"
+
+    desktop.path  = /usr/local/share/applications/
+    desktop.files = mere-about.desktop
+    desktop.commands = @echo "Going to copy desktop entity"
+
+    INSTALLS += target i18n desktop
 }
 
 
