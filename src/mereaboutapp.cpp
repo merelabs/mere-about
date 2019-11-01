@@ -16,7 +16,12 @@ MereAboutApp::~MereAboutApp()
 MereAboutApp::MereAboutApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
+    QCoreApplication::setApplicationName(Mere::About::AppName);
+    QCoreApplication::setApplicationVersion(Mere::About::AppVersion);
+
     setObjectName("MereAboutApp");
+
+
 
     // Apply Styles
     QFile File(":/about/about.qss");

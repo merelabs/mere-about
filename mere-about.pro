@@ -7,6 +7,8 @@ VERSION = 0.0.1b
 TEMPLATE= app
 
 DEFINES += QT_DEPRECATED_WARNINGS
+DEFINES += APP_NAME=\\\"$$TARGET\\\"
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
 SOURCES += \
         src/main.cpp \
