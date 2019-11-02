@@ -30,7 +30,7 @@ MereAboutApp::MereAboutApp(int &argc, char **argv)
     setStyleSheet(StyleSheet);
 
     // Apply I18n
-    bool ok = MereI18nUtils::apply();
+    bool ok = MereI18nUtils::apply(&m_translator);
     if (ok)
         qDebug() << "WARN: failed to apply i18n support!";
 
