@@ -9,6 +9,12 @@ namespace Mere
 {
     namespace About
     {
+        #ifdef APP_CODE
+        const QString AppCode   = APP_CODE;
+        #else
+        const QString AppCode   = "about";
+        #endif
+
         #ifdef APP_NAME
         const QString AppName   = APP_NAME;
         #else
