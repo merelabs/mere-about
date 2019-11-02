@@ -24,6 +24,16 @@ HEADERS += \
 RESOURCES += \
     res/about.qrc
 
+INCLUDEPATH += src
+INCLUDEPATH += ../include
+INCLUDEPATH += ../../mere-utils/include
+INCLUDEPATH += /usr/local/include
+
+DEPENDPATH  += . ../lib
+DEPENDPATH  +=. ../../mere-utils/lib
+
+LIBS += -L../../mere-utils/lib  -lmere-utils
+
 #
 # Generate TS file(s)
 #
