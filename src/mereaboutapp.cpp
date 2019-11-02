@@ -19,6 +19,7 @@ MereAboutApp::MereAboutApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
     setObjectName("MereAboutApp");
+    setProperty("AppCode", Mere::About::AppCode);
     setApplicationName(Mere::About::AppName);
     setApplicationVersion(Mere::About::AppVersion);
 
