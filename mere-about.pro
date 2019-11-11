@@ -5,6 +5,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET  = mere-about
 TEMPLATE= app
 
+DEFINES += APP_CODE=\\\"about\\\"
+DEFINES += APP_NAME=\\\"$$TARGET\\\"
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
@@ -18,6 +21,9 @@ HEADERS += \
 
 RESOURCES += \
     res/about.qrc
+
+LIBS += -lmere-utils
+INCLUDEPATH += /usr/local/include
 
 #TRANSLATIONS += \
 #    i18n/mere-about_bn.ts \
@@ -49,6 +55,7 @@ TRANSLATIONS_FILES =
 qtPrepareTool(LRELEASE, lrelease)
 for(tsfile, TRANSLATIONS) {
     qmfile = $$tsfile
+    qmfile ~= s,mere-,
     qmfile ~= s,.ts,.qm
 
     command = $$LRELEASE -removeidentical $$tsfile -qm $$qmfile
