@@ -1,6 +1,9 @@
 .qmake.stash
 *.json
 *.o
+*.qm
+moc_*
+qrc_*
 Makefile
 mere-about
 mere-about.pro.*
