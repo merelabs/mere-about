@@ -4,6 +4,10 @@
 #include "mere/utils/mereapputils.h"
 #include "mere/utils/merei18nutils.h"
 
+#include "mere/log/merelogfactory.h"
+#include "mere/log/merelogger.h"
+
+#include <QThread>
 #include <QFileInfo>
 #include <QLocale>
 
