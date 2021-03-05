@@ -12,12 +12,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         src/main.cpp \
-        src/mereaboutapp.cpp \
-        src/mereaboutwin.cpp
+        src/aboutapp.cpp \
+        src/aboutwin.cpp
 
 HEADERS += \
-        src/mereaboutapp.h \
-        src/mereaboutwin.h
+        src/aboutapp.h \
+        src/aboutwin.h
 
 RESOURCES += \
     res/about.qrc
@@ -42,26 +42,26 @@ defineReplace(prependAll) {
     for(a, $$1): result += $$2$${a}$$3
     return($$result)
 }
-TRANSLATIONS = $$prependAll(LANGUAGES, i18n/mere-about_, .ts)
+TRANSLATIONS = $$prependAll(LANGUAGES, i18n/about_, .ts)
 qtPrepareTool(LUPDATE, lupdate)
 command = $$LUPDATE mere-about.pro
 system($$command)|error("Failed to run: $$command")
 
-#
-# Generate QM file from TS file, and
-# Copy to the resource bundle
-#
-TRANSLATIONS_FILES =
-qtPrepareTool(LRELEASE, lrelease)
-for(tsfile, TRANSLATIONS) {
-    qmfile = $$tsfile
-    qmfile ~= s,mere-,
-    qmfile ~= s,.ts,.qm
+##
+## Generate QM file from TS file, and
+## Copy to the resource bundle
+##
+#TRANSLATIONS_FILES =
+#qtPrepareTool(LRELEASE, lrelease)
+#for(tsfile, TRANSLATIONS) {
+#    qmfile = $$tsfile
+#    qmfile ~= s,mere-,
+#    qmfile ~= s,.ts,.qm
 
-    command = $$LRELEASE -removeidentical $$tsfile -qm $$qmfile
-    system($$command)|error("Failed to run: $$command")
-    TRANSLATIONS_FILES += $$qmfile
-}
+#    command = $$LRELEASE -removeidentical $$tsfile -qm $$qmfile
+#    system($$command)|error("Failed to run: $$command")
+#    TRANSLATIONS_FILES += $$qmfile
+#}
 
 #
 # Install
