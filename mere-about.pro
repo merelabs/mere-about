@@ -22,12 +22,13 @@ HEADERS += \
 RESOURCES += \
     res/about.qrc
 
-LIBS += -lmere-utils
 INCLUDEPATH += /usr/local/include
 
-#TRANSLATIONS += \
-#    i18n/mere-about_bn.ts \
-#    i18n/mere-about_en.ts
+LIBS += -lmere-utils
+
+TRANSLATIONS += \
+    i18n/about_bn.ts \
+    i18n/about_en.ts
 
 #DISTFILES += \
 #    i18n/mere-about_bn.ts \
@@ -37,12 +38,12 @@ INCLUDEPATH += /usr/local/include
 #
 # Generate TS file
 #
-LANGUAGES = en bn
-defineReplace(prependAll) {
-    for(a, $$1): result += $$2$${a}$$3
-    return($$result)
-}
-TRANSLATIONS = $$prependAll(LANGUAGES, i18n/about_, .ts)
+#LANGUAGES = en bn
+#defineReplace(prependAll) {
+#    for(a, $$1): result += $$2$${a}$$3
+#    return($$result)
+#}
+#TRANSLATIONS = $$prependAll(LANGUAGES, i18n/about_, .ts)
 qtPrepareTool(LUPDATE, lupdate)
 command = $$LUPDATE mere-about.pro
 system($$command)|error("Failed to run: $$command")

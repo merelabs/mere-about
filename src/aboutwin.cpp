@@ -12,7 +12,7 @@ AboutWin::AboutWin(QWidget *parent)
     : QWidget(parent)
 {
     setWindowFlag(Qt::FramelessWindowHint);
-    setObjectName(QString::fromUtf8("MereAboutWin"));
+    setObjectName("AboutWin");
 
     resize(700, 300);
 
@@ -45,13 +45,13 @@ void AboutWin::initHeaderUI()
     QHBoxLayout *hLayout = new QHBoxLayout;
 
     QWidget *header = new QWidget(this);
-    header->setObjectName(QString::fromUtf8("MereAboutHeader"));
+    header->setObjectName("AboutHeader");
     header->setMinimumHeight(60);
     header->setMaximumHeight(75);
     header->setLayout(hLayout);
 
     QLabel *mereLogo = new QLabel(header);
-    mereLogo->setObjectName(QString::fromUtf8("MereAboutLogo"));
+    mereLogo->setObjectName("AboutLogo");
     mereLogo->setMaximumHeight(41);
     mereLogo->setMaximumWidth(161);
 
@@ -61,13 +61,13 @@ void AboutWin::initHeaderUI()
 
     hLayout->addWidget(mereLogo);
 
-    m_version = new QLabel(tr("MereAboutVersion"), header);
-    m_version->setObjectName(QString::fromUtf8("MereAboutVersion"));
+    m_version = new QLabel(tr("AboutVersion"), header);
+    m_version->setObjectName("AboutVersion");
     m_version->setAlignment(Qt::AlignBottom);
     hLayout->addWidget(m_version);
 
     QPushButton *btnClose = new QPushButton(header);
-    btnClose->setObjectName(QString::fromUtf8("btnClose"));
+    btnClose->setObjectName("btnClose");
     btnClose->setMaximumSize(QSize(24, 24));
     btnClose->setAutoFillBackground(false);
 
@@ -92,8 +92,8 @@ void AboutWin::initContentUI()
     content->setLayout(hLayout);
     content->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
-    m_summary = new QLabel(tr("MereAboutSummary"));
-    m_summary->setObjectName(QString::fromUtf8("MereAboutSummary"));
+    m_summary = new QLabel(tr("AboutSummary"));
+    m_summary->setObjectName("AboutSummary");
     m_summary->setWordWrap(true);
 
     hLayout->addWidget(m_summary);
@@ -112,14 +112,14 @@ void AboutWin::initFooterUI()
     QWidget *footer = new QWidget(this);
     footer->setLayout(vLayout);
 
-    m_contact = new QLabel(tr("MereContactUs"), this);
-    m_contact->setObjectName(QString::fromUtf8("MereContactUs"));
+    m_contact = new QLabel(tr("ContactUs"), this);
+    m_contact->setObjectName("ContactUs");
     vLayout->addWidget(m_contact);
 
     QLabel *addresses = new QLabel(this);
     addresses->setAlignment(Qt::AlignCenter);
     addresses->setMargin(0);
-    addresses->setText("https://github.com/merelab | https://merelab.io | info@merelab.io");
+    addresses->setText("https://github.com/merelabs | https://merelabs.io | info@merelabs.io");
     vLayout->addWidget(addresses);
 
     layout()->addWidget(footer);

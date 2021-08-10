@@ -1,7 +1,6 @@
 #ifndef MEREABOUTAPP_H
 #define MEREABOUTAPP_H
 
-#include <QDebug>
 #include <QTranslator>
 #include <QApplication>
 
@@ -38,7 +37,7 @@ public:
     ~AboutApp();
     explicit AboutApp(int &argc, char **argv);
 
-    void init();
+    int init();
     void start();
 
 private:

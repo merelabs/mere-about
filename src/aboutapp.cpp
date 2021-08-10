@@ -20,26 +20,20 @@ AboutApp::~AboutApp()
 AboutApp::AboutApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
-    setObjectName("MereAboutApp");
+    setObjectName("AboutApp");
 
-    Mere::Utils::AppUtils::setAppCode(Mere::About::AppCode);
+    Mere::Utils::AppUtils::setAppCode(Mere::About::AppCode.toStdString());
     setApplicationName(Mere::About::AppName);
     setApplicationVersion(Mere::About::AppVersion);
-
-    // Apply Styles
-    QFile File(":/about/about.qss");
-    File.open(QFile::ReadOnly);
-    QString StyleSheet = QLatin1String(File.readAll());
-    setStyleSheet(StyleSheet);
-
-    Mere::Utils::I18nUtils::apply();
 
     m_win = new AboutWin();
 }
 
-void AboutApp::init()
+int AboutApp::init()
 {
     m_win->init();
+
+    return 0;
 }
 
 void AboutApp::start()
