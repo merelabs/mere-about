@@ -1,9 +1,9 @@
 QT      += core gui
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET  = mere-about
 TEMPLATE= app
+VERSION= 0.0.1
 
 DEFINES += APP_CODE=\\\"about\\\"
 DEFINES += APP_NAME=\\\"$$TARGET\\\"
@@ -43,7 +43,6 @@ system($$command)|error("Failed to run: $$command")
 qtPrepareTool(LRELEASE, lrelease)
 command = $$LRELEASE mere-about.pro
 system($$command)|error("Failed to run: $$command")
-#message($$command)
 
 #
 # Install

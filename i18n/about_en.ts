@@ -5,7 +5,7 @@
     <name>AboutWin</name>
     <message>
         <source>AboutVersion</source>
-        <translation>0.0.1b</translation>
+        <translation>0.0.1</translation>
     </message>
     <message>
         <source>AboutSummary</source>
