@@ -5,11 +5,11 @@
 #include <QWidget>
 #include <QDebug>
 
-class MereAboutWin : public QWidget
+class AboutWin : public QWidget
 {
     Q_OBJECT
 public:
-    explicit MereAboutWin(QWidget *parent = nullptr);
+    explicit AboutWin(QWidget *parent = nullptr);
     void init();
 
 private:
