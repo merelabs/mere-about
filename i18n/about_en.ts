@@ -2,19 +2,19 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="en_US">
 <context>
-    <name>MereAboutWin</name>
+    <name>AboutWin</name>
     <message>
-        <source>MereAboutVersion</source>
-        <translation>0.0.1b</translation>
+        <source>AboutVersion</source>
+        <translation>0.0.1</translation>
     </message>
     <message>
-        <source>MereAboutSummary</source>
+        <source>AboutSummary</source>
         <translation>Simple system interface for UNIX like operating system developed from scratch.
 
-MERE is licenced under the BSD 3-clause licence.</translation>
+MERE is licenced under the BSD 2-clause licence.</translation>
     </message>
     <message>
-        <source>MereContactUs</source>
+        <source>ContactUs</source>
         <translation>Contact Us</translation>
     </message>
 </context>

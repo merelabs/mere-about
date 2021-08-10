@@ -2,19 +2,19 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="bn_BD">
 <context>
-    <name>MereAboutWin</name>
+    <name>AboutWin</name>
     <message>
-        <source>MereAboutVersion</source>
-        <translation>0.0.1ব</translation>
+        <source>AboutVersion</source>
+        <translation>০.০.১</translation>
     </message>
     <message>
-        <source>MereAboutSummary</source>
+        <source>AboutSummary</source>
         <translation>স্ক্র্যাচ থেকে অপারেটিং সিস্টেমের মতো ইউনিক্সের জন্য সাধারণ সিস্টেম ইন্টারফেস।
 
-বিএসডি 3-ধারা লাইসেন্সের অধীনে আমার লাইসেন্স দেওয়া হয়েছে।</translation>
+বিএসডি 2-ধারা লাইসেন্সের অধীনে আমার লাইসেন্স দেওয়া হয়েছে।</translation>
     </message>
     <message>
-        <source>MereContactUs</source>
+        <source>ContactUs</source>
         <translation>যোগাযোগ করুন</translation>
     </message>
 </context>
