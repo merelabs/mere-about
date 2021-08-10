@@ -4,10 +4,6 @@
 #include "mere/utils/apputils.h"
 #include "mere/utils/i18nutils.h"
 
-#include <QThread>
-#include <QFileInfo>
-#include <QLocale>
-
 AboutApp::~AboutApp()
 {
     if (m_win)
@@ -18,13 +14,15 @@ AboutApp::~AboutApp()
 }
 
 AboutApp::AboutApp(int &argc, char **argv)
-    : QApplication(argc, argv)
+    : Mere::Widgets::DefaultApp(argc, argv)
 {
     setObjectName("AboutApp");
 
     Mere::Utils::AppUtils::setAppCode(Mere::About::AppCode.toStdString());
     setApplicationName(Mere::About::AppName);
     setApplicationVersion(Mere::About::AppVersion);
+
+    Mere::Utils::I18nUtils::apply();
 
     m_win = new AboutWin();
 }

@@ -1,9 +1,7 @@
 #ifndef MEREABOUTAPP_H
 #define MEREABOUTAPP_H
 
-#include <QTranslator>
-#include <QApplication>
-
+#include "mere/widgets/defaultapp.h"
 namespace Mere
 {
     namespace About
@@ -30,7 +28,7 @@ namespace Mere
 
 
 class AboutWin;
-class AboutApp : public QApplication
+class AboutApp : public Mere::Widgets::DefaultApp
 {
     Q_OBJECT
 public:
@@ -42,7 +40,6 @@ public:
 
 private:
     AboutWin *m_win;
-    QTranslator m_translator;
 };
 
 #endif // MEREABOUTAPP_H

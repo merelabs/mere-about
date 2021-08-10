@@ -4,30 +4,18 @@
 <context>
     <name>AboutWin</name>
     <message>
-        <source>MereAboutVersion</source>
-        <translation type="vanished">0.0.1b</translation>
+        <source>AboutVersion</source>
+        <translation>0.0.1b</translation>
     </message>
     <message>
-        <source>MereAboutSummary</source>
-        <translation type="vanished">Simple system interface for UNIX like operating system developed from scratch.
+        <source>AboutSummary</source>
+        <translation>Simple system interface for UNIX like operating system developed from scratch.
 
 MERE is licenced under the BSD 2-clause licence.</translation>
     </message>
     <message>
-        <source>MereContactUs</source>
-        <translation type="vanished">Contact Us</translation>
-    </message>
-    <message>
-        <source>AboutVersion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>AboutSummary</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>ContactUs</source>
-        <translation type="unfinished"></translation>
+        <translation>Contact Us</translation>
     </message>
 </context>
 </TS>
