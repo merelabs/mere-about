@@ -2,9 +2,8 @@ QT      += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET  = mere-about
-VERSION = 0.0.1b
+VERSION = 0.0.1
 TEMPLATE= app
-VERSION= 0.0.1
 
 DEFINES += APP_CODE=\\\"about\\\"
 DEFINES += APP_NAME=\\\"$$TARGET\\\"

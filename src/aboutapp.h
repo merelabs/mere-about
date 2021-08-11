@@ -26,7 +26,6 @@ namespace Mere
     }
 }
 
-
 class AboutWin;
 class AboutApp : public Mere::Widgets::DefaultApp
 {

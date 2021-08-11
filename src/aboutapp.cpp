@@ -18,7 +18,7 @@ AboutApp::AboutApp(int &argc, char **argv)
 {
     setObjectName("AboutApp");
 
-    Mere::Utils::AppUtils::setAppCode(Mere::About::AppCode.toStdString());
+    setAppCode(Mere::About::AppCode.toStdString());
     setApplicationName(Mere::About::AppName);
     setApplicationVersion(Mere::About::AppVersion);
 
@@ -29,6 +29,8 @@ AboutApp::AboutApp(int &argc, char **argv)
 
 int AboutApp::init()
 {
+    Mere::Widgets::DefaultApp::init();
+
     m_win->init();
 
     return 0;
