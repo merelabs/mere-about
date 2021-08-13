@@ -24,12 +24,13 @@ HEADERS += \
 RESOURCES += \
     res/about.qrc
 
-INCLUDEPATH += /usr/local/include
-LIBS += -lmere-utils -lmere-widgets
-
 TRANSLATIONS += \
     i18n/about_bn.ts \
     i18n/about_en.ts
+
+INCLUDEPATH += /usr/local/include
+LIBS += -lmere-utils -lmere-widgets
+
 
 ##
 ## TS file(s)
@@ -52,7 +53,6 @@ system($$command)|error("Failed to run: $$command")
 unix{
     target.path = /usr/local/bin/
 
-#    i18n.path = /usr/local/share/mere/mere-about/i18n/
     i18n.path = /usr/local/share/mere/about/i18n
     i18n.files = i18n/*.qm
 
