@@ -12,6 +12,6 @@
 #ContactUs
 {
     color: rgb(255, 255, 255);
-    font: 20pt "Sans Serif";
-    font-weight: 00;
+    font: 14pt "Sans Serif";
+    font-weight: 100;
 }

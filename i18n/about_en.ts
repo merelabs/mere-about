@@ -11,7 +11,7 @@
         <source>AboutSummary</source>
         <translation>Simple system interface for UNIX like operating system developed from scratch.
 
-MERE is licenced under the BSD 2-clause licence.</translation>
+MERE software is licensed under the BSD 2-clause licence.</translation>
     </message>
     <message>
         <source>ContactUs</source>

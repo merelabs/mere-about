@@ -31,14 +31,12 @@ TRANSLATIONS += \
 INCLUDEPATH += /usr/local/include
 LIBS += -lmere-utils -lmere-widgets
 
-
 ##
 ## TS file(s)
 ##
 qtPrepareTool(LUPDATE, lupdate)
 command = $$LUPDATE mere-about.pro
 system($$command)|error("Failed to run: $$command")
-
 
 #
 # Generate QM file(s) from TS file(s)
