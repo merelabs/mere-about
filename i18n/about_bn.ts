@@ -4,16 +4,19 @@
 <context>
     <name>AboutWin</name>
     <message>
+        <location filename="../src/aboutwin.cpp" line="63"/>
         <source>AboutVersion</source>
         <translation>০.০.১</translation>
     </message>
     <message>
+        <location filename="../src/aboutwin.cpp" line="94"/>
         <source>AboutSummary</source>
         <translation>ইউনিক্স অপারেটিং সিস্টেমের জন্য স্ক্র্যাচ থেকে তৈরি করা সহজ সিস্টেম ইন্টারফেস।
 
 মেয়ার সফটওয়্যার বিএসডি ২-ধারা লাইসেন্সের অধীনে লাইসেন্সপ্রাপ্ত।</translation>
     </message>
     <message>
+        <location filename="../src/aboutwin.cpp" line="114"/>
         <source>ContactUs</source>
         <translation>যোগাযোগ করুন</translation>
     </message>
